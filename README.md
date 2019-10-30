@@ -9,11 +9,13 @@ Refer to the file **setup_guide.pdf** for further information on how to setup th
 
 *	**LQR_NPC** – the basic LQR controller.
 *	**PP_NPC** – the basic pole placement controller.
-* **LQR_IA_NPC** – LQR controller supplemented with integral action to prevent drift in the gyroscopic sensor.
-*	**OPP_NPC** – LQR controller supplemented with pole placement to shift the fastest pole, and an observer.
 *	**LQG_NPC** – LQG controller without integral action.
-*	**LQG_IA_NPC** – LQG controller with integral action to prevent drift in the gyroscopic sensor.
-*	**LQG_IA_WPC** – a test controller that is not featured in the paper, with a pre-compensator to smooth the reference signal supplied to Gyroboy.
+
+Additional designs not featuring in the paper are as follows:
+* **LQR_IA_NPC** – LQR controller without gyroscopic sensor filtering but supplemented with integral action to compensate for drift in the gyroscopic sensor.
+*	**OPP_NPC** – LQR controller supplemented with an observer designed using pole placement.
+*	**LQG_IA_NPC** – LQG controller without gyroscopic sensor filtering but supplemented with integral action to compensate for drift in the gyroscopic sensor.
+*	**LQG_IA_WPC** – LQG controller with a pre-compensator to smooth the reference signal supplied to Gyroboy.
 
 Alongside these controllers, the relevant files used to deduce the motor constants can be found in **MOTOR_TEST** and the files used to test the sensors can be found in **SENSOR_TEST**.
 
