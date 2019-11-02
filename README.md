@@ -21,4 +21,4 @@ Alongside these controllers, the relevant files used to deduce the motor constan
 
 The files for supplying reference signals to the Segway robot are found in the master folder – *KeyboardControl.slx* allows for the arrows of the keyboard to be used to supply signals to the robot, while *GamepadAnalog.slx* accomplishes the same task with an Xbox One controller. These files will work with all of the above controllers.
 
-The short video *gyroboy.mp4* shows the Segway robot in action.
+Videos demonstrating each controller can be found in the corresponding folders. Additionally, there is a video of Gyroboy being controlled by an Xbox Controller in the master folder. The short video *gyroboy.mp4* also shows the Segway robot in action.
